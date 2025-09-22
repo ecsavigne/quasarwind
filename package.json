@@ -1,6 +1,6 @@
 {
   "name": "quasarwind",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "CLI for generating custom project vite  with Quasar and Tailwind",
   "bin": {
     "quasarwind": "bin/index.js"
