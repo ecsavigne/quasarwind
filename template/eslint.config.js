@@ -63,6 +63,7 @@ export default defineConfigWithVueTs(
 
     // add your custom rules here
     rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
       'prefer-promise-reject-errors': 'off',
 
       // allow debugger during development only
