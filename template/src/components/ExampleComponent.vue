@@ -52,8 +52,8 @@
     </q-card>
   </div>
 
-  <div class="text-3xl font-bold underline">
-    Hello world 1!
+  <div class="text-3xl font-bold underline text-white">
+    Hello world 1! - Example aplication
   </div>
 
   <q-btn label="click me" color="primary" @click="store.increment">&nbsp; 
