@@ -1,0 +1,11 @@
+{
+  "name": "quasarwind",
+  "version": "1.0.0",
+  "description": "CLI para generar un proyecto Vite personalizado",
+  "bin": {
+    "create-miapp": "bin/index.js"
+  },
+  "keywords": ["vite", "cli", "template", "starter"],
+  "author": "Tu Nombre",
+  "license": "MIT"
+}
