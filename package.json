@@ -10,6 +10,6 @@
   "license": "MIT",
   "files":[
     "bin",
-    "template"
+    "quasarwind"
   ]
 }
