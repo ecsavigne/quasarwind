@@ -1,11 +1,21 @@
 {
   "name": "quasarwind",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "CLI for generating custom project vite  with Quasar and Tailwind",
   "bin": {
     "quasarwind": "bin/index.js"
   },
-  "keywords": ["vite", "quasar","tailwind", "vue", "pinia", "router", "typescript", "eslint", "prettier"],
+  "keywords": [
+    "vite",
+    "quasar",
+    "tailwind",
+    "vue",
+    "pinia",
+    "router",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
   "author": "Edilberto Coello Savigne",
   "license": "MIT"
 }
