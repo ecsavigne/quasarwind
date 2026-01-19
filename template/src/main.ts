@@ -22,7 +22,6 @@ import './css/app.css'
 
 // Import Quasar css
 import 'quasar/src/css/index.sass'
-// /home/ecs/Mis_Repos/skuSyncAll/vite_quasar/quasarProjectTailwind/node_modules/quasar/src/css
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
 import App from './App.vue'
@@ -32,7 +31,6 @@ import { createPinia } from 'pinia'
 const appMain = createApp(App)
 // Assumes you have a <div id="app"></div> in your index.html
 
-
 appMain.use(Quasar)
 appMain.use(router)
 
@@ -40,5 +38,3 @@ const pinia = createPinia()
 appMain.use(pinia)
 
 appMain.mount('#app')
-
-
