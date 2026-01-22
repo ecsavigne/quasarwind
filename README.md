@@ -2,7 +2,6 @@
 
 ### 1. install 
         npm i -g quasarwind
-### 2. execute cli
-        quasarwind name_project
-### 3. Create project
-### 4. Follow instructions
+### 2. Create project
+        $ quasarwind name_project
+

@@ -30,16 +30,18 @@ const showInfo = () => {
   console.log("👉 Execute now:");
   console.log(`   cd ${projectName}`);
   console.log("   npm install");
-  console.log("   npm run dev");
+  console.log("   quasarwind dev");
 }
 
 const showHelp = () => {
-  console.log("✅ help");
-  console.log("Commands:");
-  console.log("\tversion or -v");
-  console.log("\tcreate name_project");
-  console.log("\tdev or d");
-  console.log("\tbuild or b");
+  console.log("🚀 Quasarwind CLI - Help");
+console.log("------------------------------------------------------------------");
+console.log("✅ Available commands:");
+console.log("\n  📌  version, -v                Show version");
+console.log("  ✨  create <name_project>      Scaffolds a new project");
+console.log("  🛠️  dev, d                     Run development server");
+console.log("  📦  build, b                   Compile for prodution");
+console.log("\n----------------------------------------------------------------");
 }
 
 const runDev = () => {
