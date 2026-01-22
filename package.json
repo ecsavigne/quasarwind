@@ -1,6 +1,7 @@
 {
   "name": "quasarwind",
-  "version": "1.0.9",
+  "version": "1.1.0",
+  "type": "module",
   "description": "CLI for generating custom project vite  with Quasar and Tailwind",
   "bin": {
     "quasarwind": "bin/index.js"
@@ -17,5 +18,8 @@
     "prettier"
   ],
   "author": "Edilberto Coello Savigne",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
 }
