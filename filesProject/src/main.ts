@@ -1,6 +1,5 @@
-import { createApp } from 'vue'
-import { Quasar } from 'quasar'
-
+// Import Quasar css
+import 'quasar/src/css/index.sass'
 // Import icon libraries
 import '@quasar/extras/roboto-font/roboto-font.css'
 import '@quasar/extras/material-icons/material-icons.css'
@@ -18,12 +17,14 @@ import '@quasar/extras/eva-icons/eva-icons.css'
 import '@quasar/extras/themify/themify.css'
 import '@quasar/extras/line-awesome/line-awesome.css'
 import '@quasar/extras/bootstrap-icons/bootstrap-icons.css'
+
 import './css/app.css'
 
-// Import Quasar css
-import 'quasar/src/css/index.sass'
+
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
+import { createApp } from 'vue'
+import { Quasar } from 'quasar'
 import App from './App.vue'
 import { router } from './router'
 import { createPinia } from 'pinia'
