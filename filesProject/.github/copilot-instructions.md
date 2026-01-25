@@ -190,6 +190,16 @@ src/
 Las clases `css` que existen en `Quasar` y `Tailwinds` solo pueden ser usadas en los componentes de quasar eje de clases:
 
 - `hidden`
+- **Regla de Estilo CSS**: "Siempre que generes o sugieras clases de utilidad para el modo oscuro (aquellas que comienzan con el prefijo `dark:`), debes añadir obligatoriamente un signo de exclamación ! al final de la clase (ejemplo: `dark:bg-slate-800!`). Esto es necesario para asegurar la prioridad sobre los estilos base de Quasar. Por favor, añade este punto a tu checklist de revisión de código antes de entregar cualquier componente Vue."
+  ej:
+  #### Mal (sin instruir):
+  ```
+  <div class="bg-white dark:bg-black">
+  ```
+  #### Bien (con tu instrucción):
+  ```
+  <div class="bg-white dark:bg-black!">
+  ```
 
 ### Tailwind CSS
 
@@ -251,10 +261,6 @@ Nunca llamar fetch o axios directamente desde componentes.
 - **Nombres de composables con use**
 - **Un composable = una responsabilidad**
 - **Nada de lógica en templates**
-- **Cuando use clase css ` dark:*` colocar `!` para priorizar estilo tailwind\*** ej:
-  ```
-    dark:bg-gray-900!
-  ```
 - **Usa interface para**: Definir la estructura de componentes, objetos de la API, modelos de datos y contratos de clases.
 - **Usa type para**: Tipos lógicos, uniones, alias de tipos simples o cuando necesitas manipular tipos (Pick, Omit, etc.).
 
