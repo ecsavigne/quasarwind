@@ -45,17 +45,31 @@ La **lógica vive en composables**, no en los componentes.
 
 ## 3. 📂 Estructura de Carpetas
 
-### La estructura está orientada a **composición y reutilización**, no a vistas monolíticas.
+### La estructura está orientada a **composición y reutilización**, no a vistas monolíticas. ej:
 
 ```
 src/
+├── assets/
+│   ├── images/
+│   ├── icons/
+│   └── fonts/
+│
+├── css/
+│   ├── main.css
+│   └── tailwind.css
+│
 ├── components/
 │   ├── ui/
 │   │   ├── Button.vue
 │   │   ├── Modal.vue
 │   │   └── Input.vue
+│   │
 │   └── layout/
 │       └── AppHeader.vue
+│
+├── layouts/
+│   ├── DefaultLayout.vue
+│   └── AuthLayout.vue
 │
 ├── pages/
 │   ├── HomePage.vue
@@ -79,7 +93,11 @@ src/
 ├── types/
 │   └── index.ts
 │
-└── main.ts
+├── App.vue
+├── main.ts
+├── vite-env.d.ts
+└── shims-vue.d.ts
+
 ```
 
 ---
@@ -233,6 +251,10 @@ Nunca llamar fetch o axios directamente desde componentes.
 - **Nombres de composables con use**
 - **Un composable = una responsabilidad**
 - **Nada de lógica en templates**
+- **Cuando use clase css ` dark:*` colocar `!` para priorizar estilo tailwind\*** ej:
+  ```
+    dark:bg-gray-900!
+  ```
 - **Usa interface para**: Definir la estructura de componentes, objetos de la API, modelos de datos y contratos de clases.
 - **Usa type para**: Tipos lógicos, uniones, alias de tipos simples o cuando necesitas manipular tipos (Pick, Omit, etc.).
 
