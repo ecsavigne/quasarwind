@@ -281,6 +281,7 @@ Nunca llamar fetch o axios directamente desde componentes.
 
 ## 12. ✅ Checklist antes de entregar
 
+- **sigue las instrucciones en `.instructions/modo_oscuro_claro-instructions.md` para generar el modo claro y oscuro de forma consistente con Tailwind / Flowbite / DaisyUI / Quasar**.
 - **¿La lógica está en un composable?**
 - **¿El componente es reutilizable?**
 - **¿El responsive de los componentes está correctamente implementado?**
@@ -296,6 +297,7 @@ Nunca llamar fetch o axios directamente desde componentes.
 - **Evita el errores de Linter como:**.
   1. """Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.eslint@typescript-eslint/no-floating-promises""".
   2. """var x is defined but never used.eslint@typescript-eslint/no-unused-vars"""
+
 ---
 
 ## 13. 📌 Fuente de Verdad
