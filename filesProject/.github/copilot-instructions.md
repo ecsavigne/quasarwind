@@ -283,6 +283,7 @@ Nunca llamar fetch o axios directamente desde componentes.
 
 - **¿La lógica está en un composable?**
 - **¿El componente es reutilizable?**
+- **¿El responsive de los componentes está correctamente implementado?**
 - **¿Todo está tipado?**
 - **¿Pinia solo cuando aplica?**
 - **¿UI consistente con Tailwind / Flowbite / DaisyUI?**
