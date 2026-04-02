@@ -8,6 +8,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: `/${path.basename(path.dirname(__filename))}`,
   resolve: {
     alias:
     {

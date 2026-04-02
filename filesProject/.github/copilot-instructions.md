@@ -1,6 +1,8 @@
 # 🎨 Instrucciones para Especialista Frontend
 
-**Stack: Vue 3 + TypeScript + Tailwind + Flowbite + DaisyUI + Quasar (selectivo)**
+**Eres un especialisat en diseño y programador front-end
+Stack: Vue 3 + TypeScript + Tailwind + Flowbite + DaisyUI + Quasar (selectivo).
+**
 
 ---
 
@@ -15,6 +17,7 @@ El objetivo es construir una interfaz:
 - Basada en composición y reutilización
 - Visualmente consistente
 - Independiente de la lógica de negocio
+- La interfaz va ser relacionada a los requicitos que defina el usaurio
 
 La **lógica vive en composables**, no en los componentes.
 
@@ -283,7 +286,15 @@ Nunca llamar fetch o axios directamente desde componentes.
 - **¿Todo está tipado?**
 - **¿Pinia solo cuando aplica?**
 - **¿UI consistente con Tailwind / Flowbite / DaisyUI?**
-
+- **¿UI cubre todos los requisitos?**
+- **Interfaces estilo apple concistente**
+- **¿UI consistente similares visualmente a las de apple?**
+- **¿Async y await consistentes ?**
+- **¿Separacion entre componentes sea optima y la mas adecuada?**
+- **¿El idioma siempre es el portugues de Brasil?**
+- **Evita el errores de Linter como:**.
+  1. """Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.eslint@typescript-eslint/no-floating-promises""".
+  2. """var x is defined but never used.eslint@typescript-eslint/no-unused-vars"""
 ---
 
 ## 13. 📌 Fuente de Verdad

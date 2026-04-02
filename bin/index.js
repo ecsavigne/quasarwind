@@ -38,10 +38,11 @@ const showHelp = () => {
   console.log("🚀 Quasarwind CLI - Help");
 console.log("------------------------------------------------------------------");
 console.log("✅ Available commands:");
-console.log("\n  📌  version, -v                Show version");
-console.log("  ✨  create <name_project>      Scaffolds a new project");
-console.log("  🛠️  dev, d                     Run development server");
-console.log("  📦  build, b                   Compile for prodution");
+console.log("\n  📌  version, -v               Show version");
+console.log("  ✨  create <name_project>     Scaffolds a new project");
+console.log("  🛠️   dev, d                    Run development server");
+console.log("  🛠️   clean, c                  Clean files generate after build");
+console.log("  📦  build, b                  Compile for prodution");
 console.log("\n----------------------------------------------------------------");
 }
 

@@ -6,4 +6,6 @@ Allows you to create a Node.js project for programming in Vue 3+ with Quasar, Ta
         npm i -g quasarwind
 ### 2. Create project
         $ quasarwind name_project
+### 3. Command help
+        $ quasarwind -h or $ quasarwind --help
 
