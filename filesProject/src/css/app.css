@@ -1,7 +1,203 @@
 @import url('./font.css');
+@import url('./icons.css');
 
 @import 'tailwindcss';
 
 @import 'flowbite/src/themes/default';
 
 @plugin "daisyui";
+
+
+/* Enable class-based dark mode: dark: variants activate when html has .dark class */
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    background-color: #ffffff;
+    color: #0a0a0a;
+  }
+
+  html.dark {
+    background-color: #030712;
+    color: #f9fafb;
+  }
+
+  body {
+    min-height: 100vh;
+    background: inherit;
+    color: inherit;
+    transition:
+      background-color 200ms ease,
+      color 200ms ease,
+      filter 200ms ease;
+  }
+
+  #app {
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  html.theme-light {
+    color-scheme: light;
+
+    /* ── Light mode: map all accent colors to strict #000000 / #ffffff ── */
+
+    /* Sky */
+    --color-sky-50: #ffffff;
+    --color-sky-100: #ffffff;
+    --color-sky-200: #000000;
+    --color-sky-300: #000000;
+    --color-sky-400: #000000;
+    --color-sky-500: #000000;
+    --color-sky-600: #000000;
+    --color-sky-700: #000000;
+    --color-sky-800: #000000;
+    --color-sky-900: #000000;
+    --color-sky-950: #000000;
+
+    /* Cyan */
+    --color-cyan-50: #ffffff;
+    --color-cyan-100: #ffffff;
+    --color-cyan-200: #000000;
+    --color-cyan-300: #000000;
+    --color-cyan-400: #000000;
+    --color-cyan-500: #000000;
+    --color-cyan-600: #000000;
+    --color-cyan-700: #000000;
+    --color-cyan-800: #000000;
+    --color-cyan-900: #000000;
+    --color-cyan-950: #000000;
+
+    /* Blue */
+    --color-blue-50: #ffffff;
+    --color-blue-100: #ffffff;
+    --color-blue-200: #000000;
+    --color-blue-300: #000000;
+    --color-blue-400: #000000;
+    --color-blue-500: #000000;
+    --color-blue-600: #000000;
+    --color-blue-700: #000000;
+    --color-blue-800: #000000;
+    --color-blue-900: #000000;
+    --color-blue-950: #000000;
+
+    /* Amber */
+    --color-amber-50: #ffffff;
+    --color-amber-100: #ffffff;
+    --color-amber-200: #000000;
+    --color-amber-300: #000000;
+    --color-amber-400: #000000;
+    --color-amber-500: #000000;
+    --color-amber-600: #000000;
+    --color-amber-700: #000000;
+    --color-amber-800: #000000;
+    --color-amber-900: #000000;
+    --color-amber-950: #000000;
+
+    /* Orange */
+    --color-orange-50: #ffffff;
+    --color-orange-100: #ffffff;
+    --color-orange-200: #000000;
+    --color-orange-300: #000000;
+    --color-orange-400: #000000;
+    --color-orange-500: #000000;
+    --color-orange-600: #000000;
+    --color-orange-700: #000000;
+    --color-orange-800: #000000;
+    --color-orange-900: #000000;
+    --color-orange-950: #000000;
+
+    /* Purple */
+    --color-purple-50: #ffffff;
+    --color-purple-100: #ffffff;
+    --color-purple-200: #000000;
+    --color-purple-300: #000000;
+    --color-purple-400: #000000;
+    --color-purple-500: #000000;
+    --color-purple-600: #000000;
+    --color-purple-700: #000000;
+    --color-purple-800: #000000;
+    --color-purple-900: #000000;
+    --color-purple-950: #000000;
+
+    /* Red */
+    --color-red-50: #ffffff;
+    --color-red-100: #ffffff;
+    --color-red-200: #000000;
+    --color-red-300: #000000;
+    --color-red-400: #000000;
+    --color-red-500: #000000;
+    --color-red-600: #000000;
+    --color-red-700: #000000;
+    --color-red-800: #000000;
+    --color-red-900: #000000;
+    --color-red-950: #000000;
+
+    /* Yellow */
+    --color-yellow-50: #ffffff;
+    --color-yellow-100: #ffffff;
+    --color-yellow-200: #000000;
+    --color-yellow-300: #000000;
+    --color-yellow-400: #000000;
+    --color-yellow-500: #000000;
+    --color-yellow-600: #000000;
+    --color-yellow-700: #000000;
+    --color-yellow-800: #000000;
+    --color-yellow-900: #000000;
+    --color-yellow-950: #000000;
+
+    /* Slate → strict black (text, borders) / white (very-light bg) */
+    --color-slate-50: #ffffff;
+    --color-slate-100: #ffffff;
+    --color-slate-200: #000000;
+    --color-slate-300: #000000;
+    --color-slate-400: #000000;
+    --color-slate-500: #000000;
+    --color-slate-600: #000000;
+    --color-slate-700: #000000;
+    --color-slate-800: #000000;
+    --color-slate-900: #000000;
+    --color-slate-950: #000000;
+
+    /* Gray */
+    --color-gray-50: #ffffff;
+    --color-gray-100: #ffffff;
+    --color-gray-200: #000000;
+    --color-gray-300: #000000;
+    --color-gray-400: #000000;
+    --color-gray-500: #000000;
+    --color-gray-600: #000000;
+    --color-gray-700: #000000;
+    --color-gray-800: #000000;
+    --color-gray-900: #000000;
+    --color-gray-950: #000000;
+  }
+
+  html.theme-light body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  html.theme-light #app :is(a, button, input, textarea, select) {
+    accent-color: #000000;
+    caret-color: #000000;
+  }
+
+  html.theme-light #app ::selection {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #000000;
+  }
+}
+
+.playwrite-gb-j-guides-regular-italic {
+  font-family: 'Playwrite GB J Guides', cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.gravitas-one-regular {
+  font-family: 'Gravitas One', serif;
+  font-weight: 400;
+  font-style: normal;
+}
