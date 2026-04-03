@@ -1,0 +1,5 @@
+@layer components {
+  .liquid_bar_rigth_rounded {
+    @apply backdrop-blur-xl rounded-xl border bg-white/10;
+  }
+}

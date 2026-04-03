@@ -7,6 +7,7 @@
 
 @plugin "daisyui";
 
+@import './style_customer_tailwind.css'
 
 /* Enable class-based dark mode: dark: variants activate when html has .dark class */
 @variant dark (&:where(.dark, .dark *));
