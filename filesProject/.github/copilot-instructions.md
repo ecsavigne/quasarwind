@@ -111,11 +111,12 @@ src/
 
 - **Los componentes NO contienen lógica de negocio**
 - **Separación clara**
-- **Componentes → UI pura**
+- **Componentes → UI pura (con flowbite)**
 - **Composables → lógica, estado local, efectos**
 - **Pinia → estado global**
 - **Services → comunicación HTTP**
 - **Pages → orquestan, no procesan**
+- **Los comentarios del codigo y las variables deben ser en ingles**
 
 ---
 
@@ -295,6 +296,8 @@ Nunca llamar fetch o axios directamente desde componentes.
 - **¿Separacion entre componentes sea optima y la mas adecuada?**
 - **¿El idioma siempre es el portugues de Brasil?**
 - **Evita el errores de Linter como:**.
+- **Los comentarios del codigo, rutas, las variables deben ser en ingles solo el contenido a mostrar es en portugues**
+- **usa `ts-plugin` para comprobar que los `scripts` cumplen con las reglas de TypeScript**.
   1. """Promises must be awaited, end with a call to .catch, end with a call to .then with a rejection handler or be explicitly marked as ignored with the `void` operator.eslint@typescript-eslint/no-floating-promises""".
   2. """var x is defined but never used.eslint@typescript-eslint/no-unused-vars"""
 
