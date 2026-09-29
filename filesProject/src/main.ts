@@ -24,7 +24,7 @@ import './css/app.css'
 // Assumes your root component is App.vue
 // and placed in same folder as main.js
 import { createApp } from 'vue'
-import { Quasar } from 'quasar'
+import { Quasar, Notify, Dialog, LocalStorage, SessionStorage, Cookies, BottomSheet } from 'quasar'
 import App from './App.vue'
 import { router } from './router'
 import { createPinia } from 'pinia'
@@ -32,7 +32,16 @@ import { createPinia } from 'pinia'
 const appMain = createApp(App)
 // Assumes you have a <div id="app"></div> in your index.html
 
-appMain.use(Quasar)
+appMain.use(Quasar, {
+    plugins: {
+        Notify,
+        Dialog,
+        LocalStorage,
+        SessionStorage,
+        Cookies,
+        BottomSheet
+    }
+})
 appMain.use(router)
 
 const pinia = createPinia()
