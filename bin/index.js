@@ -9,7 +9,7 @@ import * as colors from "./colors.js";
 const filesProject = path.join(import.meta.dirname, "../filesProject");
 let targetDir = ""
 let projectName = ""
-const version = "1.1.0"
+const version = "1.1.6"
 
 // Functions copy fileProject in targetDir (folder created with name_project)
 const copyDir = (src, dest) => {
