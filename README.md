@@ -9,6 +9,23 @@ Allows you to create a Node.js project for programming in Vue 3+ with Quasar, Ta
 ### 3. Command help
         $ quasarwind -h or $ quasarwind --help
 
-### Star History
+### Applying validations eslint and format + prittier in vscode when save
+```json // .vscode/settings.json
+    ......
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint":"explicit"
+        },
+    "eslint.format.enable": true,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "vue"
+    ],
+   ......
+```
 
+### Start histiory
 [![Star History Chart](https://api.star-history.com/image?repos=quasarwind/quasarwind&type=date&legend=top-left)](https://www.star-history.com/?repos=quasarwind%2Fquasarwind&type=date&logscale=&legend=top-left)
+
