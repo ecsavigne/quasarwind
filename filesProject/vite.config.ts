@@ -5,10 +5,12 @@ import vue from '@vitejs/plugin-vue'
 import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 import tailwindcss from '@tailwindcss/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { Config } from './quasarwind.config'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: `/${path.basename(path.dirname(__filename))}`,
+  define: Object.fromEntries(Object.entries(Config.ENVIORMENT).map(([key, value]) => [`import.meta.env.${key}`, JSON.stringify(value)])),
   resolve: {
     alias:
     {
