@@ -42,6 +42,8 @@ console.log("\n  📌  version, -v               Show version");
 console.log("  ✨  create <name_project>     Scaffolds a new project");
 console.log("  🛠️   dev, d                    Run development server");
 console.log("  🛠️   clean, c                  Clean files generate after build");
+console.log("  🛠️   lint                     check all type errors");
+console.log("  🛠️   check                     check type errors");
 console.log("  📦  build, b                  Compile for prodution");
 console.log("\n----------------------------------------------------------------");
 }
@@ -64,6 +66,22 @@ const runClean = () => {
 
 const runBuild = () => {
   const child = spawn('npm', ['run', 'build'], { 
+    stdio: 'inherit',
+    shell: true,
+    // cwd: path.join(process.cwd(), 'tu-carpeta-fuente') // Opcional change to your source folder
+  })
+} 
+
+const runCheck = () => {
+  const child = spawn('npm', ['run', 'check'], { 
+    stdio: 'inherit',
+    shell: true,
+    // cwd: path.join(process.cwd(), 'tu-carpeta-fuente') // Opcional change to your source folder
+  })
+} 
+
+const runLint = () => {
+  const child = spawn('npm', ['run', 'lint'], { 
     stdio: 'inherit',
     shell: true,
     // cwd: path.join(process.cwd(), 'tu-carpeta-fuente') // Opcional change to your source folder
@@ -100,6 +118,10 @@ const main = () => {
     case "dev":
     case "d":
       runDev();
+    case "lint":
+      runLint();
+    case "ckeck":
+      runCheck();
     break;
     case "create":
       projectName = paramCommand[1]
