@@ -42,7 +42,7 @@ console.log("\n  📌  version, -v               Show version");
 console.log("  ✨  create <name_project>     Scaffolds a new project");
 console.log("  🛠️   dev, d                    Run development server");
 console.log("  🛠️   clean, c                  Clean files generate after build");
-console.log("  🛠️   lint                     check all type errors");
+console.log("  🛠️   lint                      check all type errors");
 console.log("  🛠️   check                     check type errors");
 console.log("  📦  build, b                  Compile for prodution");
 console.log("\n----------------------------------------------------------------");

@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import { quasar, transformAssetUrls } from '@quasar/vite-plugin'
 import tailwindcss from '@tailwindcss/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
-import { Config } from './quasarwind.config'
+import { Config } from './quasarwind.config.ts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,8 +14,8 @@ export default defineConfig({
   resolve: {
     alias:
     {
-      '@': path.resolve(__dirname, 'src'), // Define el alias @ para /src 
-      src: path.resolve(__dirname, 'src'),
+      '@': path.resolve(import.meta.dirname, 'src'), // Define el alias @ para /src 
+      src: path.resolve(import.meta.dirname, 'src'),
     },
   },
   plugins: [
